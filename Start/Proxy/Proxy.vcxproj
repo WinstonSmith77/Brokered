@@ -159,6 +159,14 @@ EXIT 0</Command>
   <ItemGroup>
     <None Include="StubProxy.def" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dlldata.c" />
+    <ClCompile Include="Server_i.c" />
+    <ClCompile Include="Server_p.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Server.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
