@@ -129,16 +129,21 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Server">
+      <HintPath>..\Server\bin\Debug\reference\Server.winmd</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>echo "Registering the proxy using Regsvr32"
-call "%25windir%25\System32\regsvr32" "$(SolutionDir)$(ConfigurationName)\Proxy.dll" /s
+call "%2525windir%2525\System32\regsvr32" "$(SolutionDir)$(ConfigurationName)\Proxy.dll" /s
 
 echo "Allowing access to the proxy assemblies using icacls"
-call "%25windir%25\System32\icacls" "$(SolutionDir)$(ConfigurationName)\*.dll" /T /grant "ALL APPLICATION PACKAGES":RX</PreBuildEvent>
+call "%25windir%25\System32\icacls" "$(SolutionDir)$(ConfigurationName)\Proxy.dll" /T /grant *S-1-15-2-1:(RX)</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
