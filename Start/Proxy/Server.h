@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.00.0613 */
 /* at Tue Jan 19 04:14:07 2038
  */
-/* Compiler settings for C:\Users\mhenning\AppData\Local\Temp\Server.idl-2213d1f3:
+/* Compiler settings for C:\Users\mhenning\AppData\Local\Temp\Server.idl-915ffee9:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0613 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 

@@ -46,10 +46,10 @@
       <InProcessServer>
         <Path>clrhost.dll</Path>
         <ActivatableClass ActivatableClassId="Server.HostProcessManager" ThreadingModel="both">
-          <ActivatableClassAttribute Name="DesktopApplicationPath" Type="string" Value="C:\Users\mhenning\Documents\Visual Studio 2015\Projects\Start\Debug\" />
+          <ActivatableClassAttribute Name="DesktopApplicationPath" Type="string" Value="D:\GitHub\Brokered\Debug\" />
         </ActivatableClass>
         <ActivatableClass ActivatableClassId="Server.BrokeredComponent1" ThreadingModel="both">
-          <ActivatableClassAttribute Name="DesktopApplicationPath" Type="string" Value="C:\Users\mhenning\Documents\Visual Studio 2015\Projects\Start\Debug\" />
+          <ActivatableClassAttribute Name="DesktopApplicationPath" Type="string" Value="D:\GitHub\Brokered\Debug\" />
         </ActivatableClass>
       </InProcessServer>
     </Extension>
