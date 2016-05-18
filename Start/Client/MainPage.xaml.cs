@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -15,10 +16,10 @@ namespace Client
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Just an exmple of invoking brokered component. 
-            Server.BrokeredComponent1 bc = new Server.BrokeredComponent1();
+            Server.BrokeredComponent bc = new Server.BrokeredComponent();
             string brokeredComponentValue = bc.GetValue();
             this.Display.Text = brokeredComponentValue;
 

@@ -44,7 +44,7 @@
     <Reference Include="System.Runtime.WindowsRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrokeredComponent1.cs" />
+    <Compile Include="BrokeredComponent.cs" />
     <Compile Include="HostProcessManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

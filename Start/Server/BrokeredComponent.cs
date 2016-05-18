@@ -1,6 +1,6 @@
 ﻿namespace Server
 {
-    public sealed class BrokeredComponent1
+    public sealed class BrokeredComponent
     {
         public string GetValue()
         {

@@ -6,7 +6,7 @@
  /* File created by MIDL compiler version 8.00.0613 */
 /* at Tue Jan 19 04:14:07 2038
  */
-/* Compiler settings for C:\Users\mhenning\AppData\Local\Temp\Server.idl-915ffee9:
+/* Compiler settings for C:\Users\mhenning\AppData\Local\Temp\Server.idl-062a1efe:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0613 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 
@@ -45,18 +45,18 @@
 
 /* Forward Declarations */ 
 
-#ifndef ____x_Server_CIBrokeredComponent1Class_FWD_DEFINED__
-#define ____x_Server_CIBrokeredComponent1Class_FWD_DEFINED__
-typedef interface __x_Server_CIBrokeredComponent1Class __x_Server_CIBrokeredComponent1Class;
+#ifndef ____x_Server_CIBrokeredComponentClass_FWD_DEFINED__
+#define ____x_Server_CIBrokeredComponentClass_FWD_DEFINED__
+typedef interface __x_Server_CIBrokeredComponentClass __x_Server_CIBrokeredComponentClass;
 
 #ifdef __cplusplus
 namespace Server {
-    interface IBrokeredComponent1Class;
+    interface IBrokeredComponentClass;
 } /* end namespace */
 
 #endif /* __cplusplus */
 
-#endif 	/* ____x_Server_CIBrokeredComponent1Class_FWD_DEFINED__ */
+#endif 	/* ____x_Server_CIBrokeredComponentClass_FWD_DEFINED__ */
 
 
 #ifndef ____x_Server_CIHostProcessManagerClass_FWD_DEFINED__
@@ -99,7 +99,7 @@ extern "C" {
 
 #ifdef __cplusplus
 namespace Server {
-class BrokeredComponent1;
+class BrokeredComponent;
 } /*Server*/
 #endif
 #ifdef __cplusplus
@@ -107,9 +107,9 @@ namespace Server {
 class HostProcessManager;
 } /*Server*/
 #endif
-#if !defined(____x_Server_CIBrokeredComponent1Class_INTERFACE_DEFINED__)
-extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Server_IBrokeredComponent1Class[] = L"Server.IBrokeredComponent1Class";
-#endif /* !defined(____x_Server_CIBrokeredComponent1Class_INTERFACE_DEFINED__) */
+#if !defined(____x_Server_CIBrokeredComponentClass_INTERFACE_DEFINED__)
+extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Server_IBrokeredComponentClass[] = L"Server.IBrokeredComponentClass";
+#endif /* !defined(____x_Server_CIBrokeredComponentClass_INTERFACE_DEFINED__) */
 
 
 /* interface __MIDL_itf_Server_0000_0000 */
@@ -123,26 +123,26 @@ extern const __declspec(selectany) _Null_terminated_ WCHAR InterfaceName_Server_
 extern RPC_IF_HANDLE __MIDL_itf_Server_0000_0000_v0_0_c_ifspec;
 extern RPC_IF_HANDLE __MIDL_itf_Server_0000_0000_v0_0_s_ifspec;
 
-#ifndef ____x_Server_CIBrokeredComponent1Class_INTERFACE_DEFINED__
-#define ____x_Server_CIBrokeredComponent1Class_INTERFACE_DEFINED__
+#ifndef ____x_Server_CIBrokeredComponentClass_INTERFACE_DEFINED__
+#define ____x_Server_CIBrokeredComponentClass_INTERFACE_DEFINED__
 
-/* interface __x_Server_CIBrokeredComponent1Class */
+/* interface __x_Server_CIBrokeredComponentClass */
 /* [uuid][object] */ 
 
 
 
-/* interface Server::IBrokeredComponent1Class */
+/* interface Server::IBrokeredComponentClass */
 /* [uuid][object] */ 
 
 
-EXTERN_C const IID IID___x_Server_CIBrokeredComponent1Class;
+EXTERN_C const IID IID___x_Server_CIBrokeredComponentClass;
 
 #if defined(__cplusplus) && !defined(CINTERFACE)
     } /* end extern "C" */
     namespace Server {
         
-        MIDL_INTERFACE("72142F68-1F8F-5EE1-5724-FC0B0F44CDA1")
-        IBrokeredComponent1Class : public IInspectable
+        MIDL_INTERFACE("BC3E21BC-D1E0-5387-68CE-B77D57F6E79C")
+        IBrokeredComponentClass : public IInspectable
         {
         public:
             virtual HRESULT STDMETHODCALLTYPE GetValue( 
@@ -150,7 +150,7 @@ EXTERN_C const IID IID___x_Server_CIBrokeredComponent1Class;
             
         };
 
-        extern const __declspec(selectany) IID & IID_IBrokeredComponent1Class = __uuidof(IBrokeredComponent1Class);
+        extern const __declspec(selectany) IID & IID_IBrokeredComponentClass = __uuidof(IBrokeredComponentClass);
 
         
     }  /* end namespace */
@@ -158,45 +158,45 @@ EXTERN_C const IID IID___x_Server_CIBrokeredComponent1Class;
     
 #else 	/* C style interface */
 
-    typedef struct __x_Server_CIBrokeredComponent1ClassVtbl
+    typedef struct __x_Server_CIBrokeredComponentClassVtbl
     {
         BEGIN_INTERFACE
         
         HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
-            __x_Server_CIBrokeredComponent1Class * This,
+            __x_Server_CIBrokeredComponentClass * This,
             /* [in] */ REFIID riid,
             /* [annotation][iid_is][out] */ 
             _COM_Outptr_  void **ppvObject);
         
         ULONG ( STDMETHODCALLTYPE *AddRef )( 
-            __x_Server_CIBrokeredComponent1Class * This);
+            __x_Server_CIBrokeredComponentClass * This);
         
         ULONG ( STDMETHODCALLTYPE *Release )( 
-            __x_Server_CIBrokeredComponent1Class * This);
+            __x_Server_CIBrokeredComponentClass * This);
         
         HRESULT ( STDMETHODCALLTYPE *GetIids )( 
-            __x_Server_CIBrokeredComponent1Class * This,
+            __x_Server_CIBrokeredComponentClass * This,
             /* [out] */ ULONG *iidCount,
             /* [size_is][size_is][out] */ IID **iids);
         
         HRESULT ( STDMETHODCALLTYPE *GetRuntimeClassName )( 
-            __x_Server_CIBrokeredComponent1Class * This,
+            __x_Server_CIBrokeredComponentClass * This,
             /* [out] */ HSTRING *className);
         
         HRESULT ( STDMETHODCALLTYPE *GetTrustLevel )( 
-            __x_Server_CIBrokeredComponent1Class * This,
+            __x_Server_CIBrokeredComponentClass * This,
             /* [out] */ TrustLevel *trustLevel);
         
         HRESULT ( STDMETHODCALLTYPE *GetValue )( 
-            __x_Server_CIBrokeredComponent1Class * This,
+            __x_Server_CIBrokeredComponentClass * This,
             /* [out][retval] */ HSTRING *value);
         
         END_INTERFACE
-    } __x_Server_CIBrokeredComponent1ClassVtbl;
+    } __x_Server_CIBrokeredComponentClassVtbl;
 
-    interface __x_Server_CIBrokeredComponent1Class
+    interface __x_Server_CIBrokeredComponentClass
     {
-        CONST_VTBL struct __x_Server_CIBrokeredComponent1ClassVtbl *lpVtbl;
+        CONST_VTBL struct __x_Server_CIBrokeredComponentClassVtbl *lpVtbl;
     };
 
     
@@ -204,27 +204,27 @@ EXTERN_C const IID IID___x_Server_CIBrokeredComponent1Class;
 #ifdef COBJMACROS
 
 
-#define __x_Server_CIBrokeredComponent1Class_QueryInterface(This,riid,ppvObject)	\
+#define __x_Server_CIBrokeredComponentClass_QueryInterface(This,riid,ppvObject)	\
     ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
 
-#define __x_Server_CIBrokeredComponent1Class_AddRef(This)	\
+#define __x_Server_CIBrokeredComponentClass_AddRef(This)	\
     ( (This)->lpVtbl -> AddRef(This) ) 
 
-#define __x_Server_CIBrokeredComponent1Class_Release(This)	\
+#define __x_Server_CIBrokeredComponentClass_Release(This)	\
     ( (This)->lpVtbl -> Release(This) ) 
 
 
-#define __x_Server_CIBrokeredComponent1Class_GetIids(This,iidCount,iids)	\
+#define __x_Server_CIBrokeredComponentClass_GetIids(This,iidCount,iids)	\
     ( (This)->lpVtbl -> GetIids(This,iidCount,iids) ) 
 
-#define __x_Server_CIBrokeredComponent1Class_GetRuntimeClassName(This,className)	\
+#define __x_Server_CIBrokeredComponentClass_GetRuntimeClassName(This,className)	\
     ( (This)->lpVtbl -> GetRuntimeClassName(This,className) ) 
 
-#define __x_Server_CIBrokeredComponent1Class_GetTrustLevel(This,trustLevel)	\
+#define __x_Server_CIBrokeredComponentClass_GetTrustLevel(This,trustLevel)	\
     ( (This)->lpVtbl -> GetTrustLevel(This,trustLevel) ) 
 
 
-#define __x_Server_CIBrokeredComponent1Class_GetValue(This,value)	\
+#define __x_Server_CIBrokeredComponentClass_GetValue(This,value)	\
     ( (This)->lpVtbl -> GetValue(This,value) ) 
 
 #endif /* COBJMACROS */
@@ -235,7 +235,7 @@ EXTERN_C const IID IID___x_Server_CIBrokeredComponent1Class;
 
 
 
-#endif 	/* ____x_Server_CIBrokeredComponent1Class_INTERFACE_DEFINED__ */
+#endif 	/* ____x_Server_CIBrokeredComponentClass_INTERFACE_DEFINED__ */
 
 
 /* interface __MIDL_itf_Server_0000_0001 */
@@ -380,9 +380,9 @@ EXTERN_C const IID IID___x_Server_CIHostProcessManagerClass;
 /* interface __MIDL_itf_Server_0000_0002 */
 /* [local] */ 
 
-#ifndef RUNTIMECLASS_Server_BrokeredComponent1_DEFINED
-#define RUNTIMECLASS_Server_BrokeredComponent1_DEFINED
-extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Server_BrokeredComponent1[] = L"Server.BrokeredComponent1";
+#ifndef RUNTIMECLASS_Server_BrokeredComponent_DEFINED
+#define RUNTIMECLASS_Server_BrokeredComponent_DEFINED
+extern const __declspec(selectany) _Null_terminated_ WCHAR RuntimeClass_Server_BrokeredComponent[] = L"Server.BrokeredComponent";
 #endif
 #ifndef RUNTIMECLASS_Server_HostProcessManager_DEFINED
 #define RUNTIMECLASS_Server_HostProcessManager_DEFINED

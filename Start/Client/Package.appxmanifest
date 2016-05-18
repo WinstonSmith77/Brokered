@@ -48,7 +48,7 @@
         <ActivatableClass ActivatableClassId="Server.HostProcessManager" ThreadingModel="both">
           <ActivatableClassAttribute Name="DesktopApplicationPath" Type="string" Value="D:\GitHub\Brokered\Debug\" />
         </ActivatableClass>
-        <ActivatableClass ActivatableClassId="Server.BrokeredComponent1" ThreadingModel="both">
+        <ActivatableClass ActivatableClassId="Server.BrokeredComponent" ThreadingModel="both">
           <ActivatableClassAttribute Name="DesktopApplicationPath" Type="string" Value="D:\GitHub\Brokered\Debug\" />
         </ActivatableClass>
       </InProcessServer>
